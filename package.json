@@ -1,0 +1,30 @@
+{
+    "name": "genie-ethny",
+    "version": "0.0.0",
+    "description": "hacakthon",
+    "main": "./metatransactions/listenAndPush.js",
+    "scripts": {
+        "test": "\\n",
+        "start": "pm2 start ./metatransactions/listenAndpush.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/antron3000/genie-EthNY.git"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "ethers": "^4.0.27",
+        "express": "^4.16.0",
+        "web3": "^1.0.0-beta.55"
+    },
+    "keywords": [
+        "hackathon"
+    ],
+    "author": "antron",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/antron3000/genie-EthNY/issues"
+    },
+    "homepage": "https://github.com/antron3000/genie-EthNY#readme"
+}
