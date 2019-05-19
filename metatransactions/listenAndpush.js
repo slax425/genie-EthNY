@@ -17,15 +17,25 @@ var foo = function() {
 app.use(cors())
 app.use(express.static('public'))
 
-//app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function(req, res) {
     console.log(req.body);
     res.send(200);
     foo();
 });
 
+app.post('/endpoint', function(req, res) {
+    const variables = {};
+    console.log('body: ' + JSON.stringify(add(34, 56)));
+    res.send(JSON.stringify(add(34, 56)));
 
+});
 
+// test function
+const add = (x, y) => {
+    const data = (x + y)
+    return data;
+}
 
 server.listen(PORT);
 
