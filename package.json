@@ -5,7 +5,7 @@
     "main": "./metatransactions/listenAndPush.js",
     "scripts": {
         "test": "\\n",
-        "start": "pm2 start ./metatransactions/listenAndpush.js"
+        "start": "nodemon ./metatransactions/listenAndpush.js"
     },
     "repository": {
         "type": "git",
